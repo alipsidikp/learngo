@@ -32,7 +32,7 @@ func main() {
 	var e error
 	var rec record
 
-	file, e := os.OpenFile("E:\\data\\sample\\Data_F1.xml", os.O_APPEND|os.O_CREATE, 0666)
+	file, e := os.Open("E:\\data\\sample\\Data_F1.xml")
 	if e != nil {
 		fmt.Println(e.Error())
 	}
