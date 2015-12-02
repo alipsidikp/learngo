@@ -38,6 +38,8 @@ func main() {
 	if e != nil {
 		fmt.Println(e.Error())
 	}
+	defer file.Close()
+
 	jsonParser := json.NewDecoder(file)
 	e = jsonParser.Decode(&rec)
 
