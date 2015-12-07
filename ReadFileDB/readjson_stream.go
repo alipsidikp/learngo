@@ -56,7 +56,7 @@ func main() {
 
 	recmap := map[string]interface{}{}
 
-	file, e = os.Open("E:\\data\\sample\\DataJson_Simple.json")
+	file, e = os.Open("E:\\data\\sample\\Data_Json.temp")
 	if e != nil {
 		fmt.Println(e.Error())
 	}
@@ -73,7 +73,7 @@ func main() {
 		if e != nil {
 			fmt.Println("Parsing Error, ", e.Error())
 		}
-		fmt.Println("Read One Field : ", recmap["EmployeeId"])
+		// fmt.Println("Read One Field : ", recmap["EmployeeId"])
 		fmt.Println(recmap)
 	}
 
