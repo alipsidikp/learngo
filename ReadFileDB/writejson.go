@@ -15,7 +15,7 @@ func main() {
 
 	header := []string{"COLUMN01", "COLUMN02", "COLUMN03", "COLUMN04", "COLUMN05", "COLUMN06"}
 
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 10000; i++ {
 		mapRandomString := map[string]string{}
 		for i, val := range header {
 			mapRandomString[val] = randomstring(i + rand.Intn(15))
