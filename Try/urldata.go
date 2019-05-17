@@ -7,7 +7,7 @@ import (
 	// "net/http"
 	// "net/url"
 )
-// test commit
+// test commit - using gpg
 func main() {
 	UrlStr := "http://www.dce.com.cn/PublicWeb/MainServlet"
 
